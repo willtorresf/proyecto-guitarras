@@ -1,0 +1,596 @@
+/*=================GENERAL============*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /*background-image: url("../public/images/fondo-index.jpg");*/
+}
+button{
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    text-align: center;
+}
+.inline li{
+    display: inline-block;
+}
+.no-inline{
+    display:list-item;
+}
+/*=======HEADER Y NAVEGADOR GENERAL==========*/
+header{
+    background-color: black;
+    position: sticky;   
+    top: 0px;
+    text-align: center;
+    z-index: 10;
+    padding: 5px;
+}
+/*=========Aplicación display flex, flex-direction, flex-wrap, justify-content, align-itens=========*/
+.nav-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+.search-bar button{
+    width: 30px;
+    height: 35px;
+    background-image: url(../public/images/lupa.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.search-bar input{
+    margin: 0;
+    height: 30px;
+    width: 600px;
+}
+/*==================Navegador 2================*/
+/*=========Aplicación display flex, flex-flow, justify-content, align-itens=========*/
+/*==================Aplicación Hover================*/
+.nav-2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    transition: all 500ms ease-in-out;   
+}
+.nav-2 div:hover{
+    transform: scale(1.2);
+}
+.nav-2 div a:hover{
+    border-bottom: solid 2px #fff;
+}
+.button-navSecundary{
+    margin: 0;
+    padding: 0;
+}
+.button-navSecundary div{
+    background-color: black;
+    margin: 0;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 500;
+}
+.button-navSecundary div a{
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+    font-weight: 500;
+}
+/*=======INDEX MAIN==========*/
+.carrousel{
+    height: 400px;
+    background-image: url(../public/images/main-carrousel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+}
+.carrousel h1{
+    margin: 0px;
+    font-size: 100px;
+    transform: translate(600px, 80px);
+    width: 600px;
+}
+.carrousel span{
+    margin: 0px;
+    font-size: 100px;
+    transform: translate(600px, 80px);
+    width: 600px;
+    color: #ff9910;
+}
+.carrousel p{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    transform: translate(600px, 100px);
+    width: 600px;
+    color: #fff;
+}
+.main-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.item-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-bar div img{
+    margin: 10px;
+}
+.item-bar p{
+    padding: 0;
+    margin: 0;
+}
+.bar-primary{
+    font-weight: 500;
+}
+/*=======INDEX SECTION 1==========*/
+/*=========Aplicación display grid, grid-template-colums, grid-template-rows, justify-content, align-itens=========*/
+.section-index1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-index1 p{
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+}
+.back-guitar{
+    height: 300px;
+    width: 500px;
+    background-image: url(../public/images/background-guitar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-guitar{
+    transform: translate(220px,80px);
+}
+.back-drum{
+    height: 300px;
+    width: 500px;
+    background-image: url(../public/images/background-drum.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-drum{
+    transform: translate(80px,80px);
+}
+#p-1g{
+    color: #ff9910;
+    font-size: 30px;
+    margin: 0;
+    transform: translateX(100px);
+}
+#p-2g{
+    border:solid 1px #fff;
+    background-color: #fff;
+    color: #000;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    transform: translateX(100px);
+}
+#p-3g{
+    transform: translateX(100px);
+}
+#p-1{
+    color: #ff9910;
+    font-size: 30px;
+    margin: 0;
+}
+#p-2{
+    border:solid 1px #fff;
+    background-color: #fff;
+    color: #000;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+/*=======INDEX SECTION 2==========*/
+.h2-section2{
+    transform: translateX(30px);
+    width: 400px;
+}
+.offer-indexGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: space-between;
+    align-content: center;
+    row-gap: 10px;
+}
+.margin{
+    transform: translateX(50px);
+}
+/*=======INDEX SECTION 3==========*/
+.section-index3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.section3-img{
+    width: 100px;
+    height: auto;
+}
+/*=======INDEX SECTION 4==========*/
+.img-center{
+    transform: translateX(30px);
+}
+/*=======INDEX SECTION 5==========*/
+.grid-section{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+.div-about{
+    font-weight: 500;
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+}
+.div-formulario{
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+}
+.div-formulario ul{
+    list-style-type: none;
+}
+.mensage input{
+    height: 80px;
+    width: 300px;
+}
+.inline-div{
+    display: inline;
+}
+.chat img{
+    height: auto;
+    width: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+/*==============FOOTER=============*/
+/*=======Aplicación Hover==========*/
+footer{
+    background-color: black;
+}
+footer p{
+    color: white;
+}
+footer li a{
+    color: white;
+}
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-face{
+    width: 50px;
+    height: auto;
+}
+.img-sizeRed{
+    width: 40px;
+    height: 40px;
+}
+.footer-nav ul li{
+    margin: 10px;
+    padding: 10px;
+}
+.footer-nav{
+    transition: all 500ms ease-in-out;
+}
+.footer-nav ul li:hover{
+    transform: scale(1.2);
+    
+}
+.footer-nav ul li a:hover{
+    border-bottom: solid 2px #fff;
+}
+/*=======PRODUCTOS==========*/
+.img-items{
+    max-width: 300px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    border: solid 2px black;
+    position: relative;
+    left: 40px;
+}
+/*=========Aplicación display grid, grid-template-areas y grid-areas=========*/
+.item-conteiner{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'main main main main'
+    'sidebar item1 item2 item3'
+    'sidebar item4 item5 item6'
+    'sidebar item7 item8 item9'   
+    ;
+    position: relative;
+}
+.item1{
+    grid-area: item1;
+    width: 1fr;
+}
+.item2{
+    grid-area: item2;
+    width: 1fr;
+}
+.item3{
+    grid-area: item3;
+    width: 1fr;
+}
+.item4{
+    grid-area: item4;
+    width: 1fr;
+}
+.item5{
+    grid-area: item5;
+    width: 1fr;
+}
+.item6{
+    grid-area: item6;
+    width: 1fr;
+}
+.item7{
+    grid-area: item7;
+    width: 1fr;
+}
+.item8{
+    grid-area: item8;
+    width: 1fr;
+}
+.item9{
+    grid-area: item9;
+    width: 1fr;
+}
+.main-titleGuitar{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/guitarra-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-title h3{
+    font-size: 40px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: white;
+}
+.main-title h1{
+    font-size: 100px;
+    position: absolute;
+    left: 100px;
+    color: #ff9910;
+}
+.sidebar{
+    grid-area: sidebar;
+    width: 200px;
+    border-right: solid 1px gray;
+    padding-left: 10px;
+    margin: 5px;
+    position: sticky;
+    left: 0px;
+    z-index: 9;
+}
+.list-items li{
+    list-style-type: none;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+.sidebar h2{
+    text-align: center;
+}
+.item-conteiner p{
+    font-weight: 500;
+    text-align: center;
+}
+.main-titleDrums{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/bateria-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+}
+.main-titleBass{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/bajo-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.main-titleAccesorios{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/accesorios-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;    
+}
+.main-titleClassic{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/classic-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.main-titleCourse{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/course-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;    
+}
+/*=========CUENTA=============*/
+.account{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.login-div ul li{
+    display: inline;
+    text-decoration: none;
+}
+.login-div ul{
+    font-weight: 500;
+    text-align: center;
+}
+.login-div p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+.register-div ul li{
+    display: inline;
+    text-decoration: none;
+}
+.register-div ul{
+    font-weight: 500;
+    text-align: center;
+}
+.register-div p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+.text-account{
+    text-align: center;
+}
+/*=========CARRITO=========*/
+.cart p{
+    border: solid 2px black;
+    text-align: center;
+    height: 200px;
+    width: 150vh;
+    position: relative;
+    left: 200px;
+}
+.cart button{
+    position: relative;
+    left: 580px;
+}
+.cart button a{
+    font-weight: 500;
+}
+/*============PAGINA DE CONSTRUCCION============*/
+.construction{
+    background-image: url("../public/images/construccion.png");
+    background-position: center;
+    background-size: 700px;
+    background-repeat: initial;
+}
+/*=========CONTACTO=============*/
+.main-titleContact{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/contact-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-grid{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    grid-gap: 20px;
+}
+.form{
+    display: grid;
+    grid-template-areas: 
+    'name name'
+    'email telefone'
+    'subject subject'
+    'message message';
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    font-size: 15px;
+}
+.name-form{
+    grid-area: name;
+}
+.name-form input{
+    width: 405px;
+}
+.tel-form{
+    grid-area: telefone;
+}
+.email-form{
+    grid-area: email;
+}
+.subject-form{
+    grid-area: subject;
+}
+.subject-form input{
+    width: 405px;
+}
+.mensage-2{
+    grid-area: message;
+}
+.mensage-2 input{
+    width: 405px;
+    height: 200px;
+}
+.no-decor li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.button-form{
+    position: relative;
+    left: 600px;
+}
