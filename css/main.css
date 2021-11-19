@@ -4,7 +4,6 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    /*background-image: url("../public/images/fondo-index.jpg");*/
 }
 button{
     padding: 10px 24px;
@@ -38,7 +37,6 @@ header{
     z-index: 10;
     padding: 5px;
 }
-/*=========Aplicación display flex, flex-direction, flex-wrap, justify-content, align-itens=========*/
 .nav-1{
     display: flex;
     flex-direction: row;
@@ -64,9 +62,17 @@ header{
     height: 30px;
     width: 600px;
 }
+#button-nav{
+    border-radius: 3px;
+    height: 42px;
+}
+#button-nav a{
+    font-size: 15px;
+}
+#button-nav a:hover{
+    color: #000;
+}
 /*==================Navegador 2================*/
-/*=========Aplicación display flex, flex-flow, justify-content, align-itens=========*/
-/*==================Aplicación Hover================*/
 .nav-2{
     display: flex;
     flex-flow: row wrap;
@@ -152,7 +158,6 @@ header{
     font-weight: 500;
 }
 /*=======INDEX SECTION 1==========*/
-/*=========Aplicación display grid, grid-template-colums, grid-template-rows, justify-content, align-itens=========*/
 .section-index1{
     display: flex;
     justify-content: space-around;
@@ -287,7 +292,6 @@ header{
     right: 15px;
 }
 /*==============FOOTER=============*/
-/*=======Aplicación Hover==========*/
 footer{
     background-color: black;
 }
@@ -336,7 +340,6 @@ footer li a{
     position: relative;
     left: 40px;
 }
-/*=========Aplicación display grid, grid-template-areas y grid-areas=========*/
 .item-conteiner{
     display: grid;
     grid-gap: 10px;
