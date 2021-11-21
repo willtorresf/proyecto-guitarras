@@ -1,0 +1,38 @@
+/*=================GENERAL============*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+button{
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    text-align: center;
+}
+.inline li{
+    display: inline-block;
+}
+.no-inline{
+    display:list-item;
+}
+
+/*============PAGINA DE CONSTRUCCION============*/
+.construction{
+    background-image: url("../public/images/construccion.png");
+    background-position: center;
+    background-size: 700px;
+    background-repeat: initial;
+}

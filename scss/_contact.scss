@@ -1,0 +1,66 @@
+/*=========CONTACTO=============*/
+.main-titleContact{
+    height: 300px;
+    grid-area: main;
+    background-image: url(../public/images/contact-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-grid{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    grid-gap: 20px;
+}
+.form{
+    display: grid;
+    grid-template-areas: 
+    'name name'
+    'email telefone'
+    'subject subject'
+    'message message';
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    font-size: 15px;
+}
+.name-form{
+    grid-area: name;
+}
+.name-form input{
+    width: 405px;
+}
+.tel-form{
+    grid-area: telefone;
+}
+.email-form{
+    grid-area: email;
+}
+.subject-form{
+    grid-area: subject;
+}
+.subject-form input{
+    width: 405px;
+}
+.mensage-2{
+    grid-area: message;
+}
+.mensage-2 input{
+    width: 405px;
+    height: 200px;
+}
+.no-decor li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.button-form{
+    position: relative;
+    left: 600px;
+}

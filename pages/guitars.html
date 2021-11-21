@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    
+    <!--=====Bootstrap========-->
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+    
+    <!--=====Main CSS========-->
     <link rel="stylesheet" href="../css/main.css">
-   
+    
     <!--=====Google fonts=====-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
-   
+    
     <title>Guitarras</title>
 </head>
 <body>
@@ -24,25 +28,25 @@
                         <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
                     </a>
                 </div>
-           
-                <div class="search-bar">
+                
+                <form class="search-bar">
                     <input type="text" placeholder="Buscar">
                     <button></button>
-                </div>
-           
-                <div class="button-nav">
-                    <button>Ciudad</button>
+                </form>
+                
+                <div>
+                    <button id="button-nav">Ciudad</button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-account.html">Cuenta</a>
                     </button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-cart.html">Carrito</a>
                     </button>
                 </div>
             </div>
-           
+            
             <!--=====Navegador 2========-->
             <div class="nav-2 button-navSecundary">
                 <div>Más opciones</div>
@@ -66,7 +70,7 @@
                 <div>
                         <a href="accessories.html">Accesorios</a>
                 </div>
-                      
+                
                 <div>
                         <a href="courses.html">Cursos</a>
                 </div>
@@ -75,85 +79,119 @@
     </header>
     
     <main>
-        <div class="item-conteiner"> 
+        <div class="conteiner">
             <div class="main-titleGuitar main-title">
                 <h1>Guitarras</h1>
                 <h3>Los mejores precios están en MusicStudio</h3>
             </div>            
-            
-            <div class="sidebar">
-                <h2>Categorias</h2>
-                <ul class="list-items">
-                    <li>Acústicas</li>
-                    <li>Electroacústicas</li>
-                    <li>Elécticas</li>
-                    <li>6 cuerdas</li>
-                    <li>7 cuerdas</li>
-                    <li>8 cuerdas</li>
-                    <li>9 cuerdas</li>
-                </ul>
-            </div>
-        
-            <div class="item1">
-                <img class="img-items" src="../public/images/guitarra-1.jpg" alt="Guitarra-1">
-                <p>Guitarra Fender 014 4702 - Standard Strato HSS - 509 - Candy Apple Red</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
+            <div class="row pt-1">
+                <div class="conteiner col-2 sidebar p-2">
+                    <h2>Categorias</h2>
+                    <ul class="list-items">
+                        <li>Acústicas</li>
+                        <li>Electroacústicas</li>
+                        <li>Elécticas</li>
+                        <li>6 cuerdas</li>
+                        <li>7 cuerdas</li>
+                        <li>8 cuerdas</li>
+                        <li>9 cuerdas</li>
+                    </ul>
+                </div>
+                <div class="conteiner col-10 row gap-4 p-0 justify-content-center">
+                    <div class="col-12 row justify-content-evenly">
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="Guitarra-1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Fender 014 4702</h5>
+                                    <p class="card-text">Standard Strato HSS - 509 - Candy Apple Red</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
 
-            <div class="item2">
-                <img class="img-items" src="../public/images/guitarra-2.jpg" alt="Guitarra-2">
-                <p>Guitarra Fender 017 0188 AM Standard Telecaster Figured Neck Ltd Edition 764</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item3">
-                <img class="img-items" src="../public/images/guitarra-3.jpg" alt="Guitarra-3">
-                <p>Guitarra Gibson Les Paul Tradicional 2017 T - Heritage Cherry Sunburst</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item4">
-                <img class="img-items" src="../public/images/guitarra-4.jpg" alt="Guitarra-4">
-                <p>Guitarra Gibson Les Paul Custom Studio 2017 - Burgundy Plum.</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-            <div class="item5">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-5">
-                <p>Guitarra acústica Ibanez</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item6">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-6">
-                <p>Guitarra Eléctrica Jackson 7 cuerdas</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item7">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-7">
-                <p>Guitarra Eléctrica Sheckter 8 cuerdas</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item8">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-8">
-                <p>Guitarra Electroacústica Yamaha</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item9">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-9">
-                <p>Guitarra Acústica Epiphone</p>
-                <p>Precio: USD XXX,XX</p>
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="guitarra-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Fender 017 0188</h5>
+                                    <p class="card-text">AM Standard Telecaster Figured Neck Ltd Edition 764</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="Guitarra-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Gibson Les Paul Tradicional 2017 T</h5>
+                                    <p class="card-text">Heritage Cherry Sunburst</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12 row justify-content-evenly">
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="Guitarra-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Gibson Les Paul Custom Studio 2017</h5>
+                                    <p class="card-text">Burgundy Plum</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra acústica Ibanez</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Eléctrica Jackson 7 cuerdas</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="col-12 row justify-content-evenly">
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Eléctrica Sheckter 8 cuerdas</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Electroacústica Yamaha</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitarra Acústica Epiphone</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
     
-    <Section>
-        <div class="chat">
-            <img src="../public/images/whatsapp-logo.png" alt="Logo whatsapp">
-        </div>
-    </Section>
+        <Section>
+            <div class="chat">
+                <img src="../public/images/whatsapp-logo.png" alt="Logo whatsapp">
+            </div>
+        </Section>
+    </main>
     
     <footer>
         <!--=====Footer========-->

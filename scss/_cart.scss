@@ -1,0 +1,32 @@
+/*=========CARRITO=========*/
+.cart{
+    border: solid 2px black;
+    text-align: center;
+    height: 350px;
+    width: 150vh;
+    position: relative;
+    left: 200px;
+}
+.cart-img{
+    width: 100px;
+    height: auto;
+    transform: translateY(60px);
+}
+.cart h3{
+    transform: translate(0px, 75px);
+}
+.cart p{
+    transform: translate(0px, 75px);
+    font-weight: 500;
+}
+.h1-cart{
+    transform: translateX(200px);
+    width: 600px;
+}
+.cart-button{
+    position: relative;
+    left: 580px;
+}
+.cart-button a{
+    font-weight: 500;
+}
