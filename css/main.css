@@ -76,9 +76,6 @@ header {
 #button-nav a {
   font-size: 15px; }
 
-#button-nav a:hover {
-  color: #000; }
-
 /*==================Navegador 2================*/
 .nav-2 {
   display: flex;
@@ -304,7 +301,6 @@ header {
 
 .main-titleDrums {
   height: 300px;
-  grid-area: main;
   background-image: url(../public/images/bateria-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,7 +316,6 @@ header {
 
 .main-titleAccesorios {
   height: 300px;
-  grid-area: main;
   background-image: url(../public/images/accesorios-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,7 +323,6 @@ header {
 
 .main-titleClassic {
   height: 300px;
-  grid-area: main;
   background-image: url(../public/images/classic-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,7 +330,6 @@ header {
 
 .main-titleCourse {
   height: 300px;
-  grid-area: main;
   background-image: url(../public/images/course-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -467,12 +460,15 @@ footer li a {
   transform: translateX(200px);
   width: 600px; }
 
-.cart-button {
+#cart-button {
   position: relative;
-  left: 580px; }
+  left: 580px;
+  border-radius: 3px;
+  height: 42px; }
 
-.cart-button a {
-  font-weight: 500; }
+#cart-button a {
+  font-weight: 500;
+  font-size: 15px; }
 
 /*=========CUENTA=============*/
 .account {

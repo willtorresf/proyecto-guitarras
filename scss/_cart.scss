@@ -23,10 +23,13 @@
     transform: translateX(200px);
     width: 600px;
 }
-.cart-button{
+#cart-button{
     position: relative;
     left: 580px;
+    border-radius: 3px;
+    height: 42px;
 }
-.cart-button a{
+#cart-button a{
     font-weight: 500;
+    font-size: 15px;
 }
