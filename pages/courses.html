@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!--=====Bootstrap========-->
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+
+    <!--=====Main CSS========-->
     <link rel="stylesheet" href="../css/main.css">
-   
+    
     <!--=====Google fonts=====-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,25 +28,25 @@
                         <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
                     </a>
                 </div>
-           
-                <div class="search-bar">
+                
+                <form class="search-bar">
                     <input type="text" placeholder="Buscar">
                     <button></button>
-                </div>
-           
-                <div class="button-nav">
-                    <button>Ciudad</button>
+                </form>
+            
+                <div >
+                    <button id="button-nav">Ciudad</button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-account.html">Cuenta</a>
                     </button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-cart.html">Carrito</a>
                     </button>
                 </div>
             </div>
-           
+            
             <!--=====Navegador 2========-->
             <div class="nav-2 button-navSecundary">
                 <div>Más opciones</div>
@@ -66,7 +70,7 @@
                 <div>
                         <a href="accessories.html">Accesorios</a>
                 </div>
-                      
+                
                 <div>
                         <a href="courses.html">Cursos</a>
                 </div>
@@ -75,83 +79,114 @@
     </header>
     
     <main>
-        <div class="item-conteiner"> 
+        <div class="conteiner">
             <div class="main-titleCourse main-title">
                 <h1>Cursos</h1>
                 <h3>Los mejores precios están en MusicStudio</h3>
             </div>            
-            
-            <div class="sidebar">
-                <h2>Categorias</h2>
-                <ul class="list-items">
-                    <li>Guitarra</li>
-                    <li>Batería</li>
-                    <li>Bajo</li>
-                    <li>Teclado</li>
-                    <li>Canto</li>
-                </ul>
-            </div>
-        
-            <div class="item1">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-1">
-                <p>Curso básico de Guitarra</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
+            <div class="row pt-1">
+                <div class="conteiner col-2 sidebar p-2">
+                    <h2>Categorias</h2>
+                    <ul class="list-items">
+                        <li>Guitarra</li>
+                        <li>Batería</li>
+                        <li>Bajo</li>
+                        <li>Teclado</li>
+                        <li>Canto</li>
+                    </ul>
+                </div>   
+                <div class="conteiner col-10 row gap-4 p-0 justify-content-center">
+                    <div class="col-12 row justify-content-evenly">
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="curso-1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Curso básico de Guitarra</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
 
-            <div class="item2">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-2">
-                <p>Curso básico de Percusión</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item3">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-3">
-                <p>Curso avanzado de bajo</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item4">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-4">
-                <p>Curso intermedio de teclado</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-            <div class="item5">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-5">
-                <p>Curso avanzado de Guitarra</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item6">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-6">
-                <p>Curso intermedio de canto</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item7">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-7">
-                <p>Curso avanzado de Percusión</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item8">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-8">
-                <p>Curso básico de Bajo</p>
-                <p>Precio: USD XXX,XX</p>
-            </div>
-
-            <div class="item9">
-                <img class="img-items" src="https://dummyimage.com/400x600/000/fff" alt="item-9">
-                <p>Curso avanzado de teclado</p>
-                <p>Precio: USD XXX,XX</p>
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="curso-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Curso básico de Percusión</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="curso-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Curso avanzado de bajo</h5>
+                                    <p class="card-text">...</p>
+                                    <p>Precio: USD XXX,XX</p>
+                                </div>
+                            </div>
+                    </div> 
+                    <div class="col-12 row justify-content-evenly">
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="curso-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso intermedio de teclado</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso avanzado de Guitarra</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso intermedio de canto</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 row justify-content-evenly">
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso avanzado de Percusión</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso básico de Bajo</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card col-4" style="width: 18rem;">
+                            <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="item-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso avanzado de teclado</h5>
+                                <p class="card-text">...</p>
+                                <p>Precio: USD XXX,XX</p>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
+        <Section>
+            <div class="chat">
+                <img src="../public/images/whatsapp-logo.png" alt="Logo whatsapp">
+            </div>
+        </Section>
     </main>
-    
-    <Section>
-        <div class="chat">
-            <img src="../public/images/whatsapp-logo.png" alt="Logo whatsapp">
-        </div>
-    </Section>
     
     <footer>
         <!--=====Footer========-->
@@ -180,7 +215,7 @@
                     <li>
                         <a href="https://www.instagram.com/" target="_blank">
                             <img class="img-sizeRed" src="../public/images/instagram-logo.png" alt="Logo instagram">
-                       </a> 
+                        </a> 
                     </li>
                     <li>
                         <a href="https://twitter.com/" target="_blank">
@@ -196,5 +231,8 @@
             </div>
         </div>
     </footer>
+    <!--=====Links JS========-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

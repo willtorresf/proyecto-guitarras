@@ -1,0 +1,15 @@
+/*======MEDIA QUERIES====*/
+@media (max-width:768px){
+    .search-bar input{
+        width: auto;
+    }
+    .footer-1{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 375px){
+    .nav-2{
+        justify-content: space-evenly;
+    }
+}

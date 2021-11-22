@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    
+    <!--=====Bootstrap========-->
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+
+    <!--=====Main CSS========-->
     <link rel="stylesheet" href="../css/main.css">
-   
+    
     <!--=====Google fonts=====-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,20 +28,20 @@
                         <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
                     </a>
                 </div>
-           
-                <div class="search-bar">
+                
+                <form class="search-bar">
                     <input type="text" placeholder="Buscar">
                     <button></button>
-                </div>
-           
-                <div class="button-nav">
-                    <button>Ciudad</button>
+                </form>
+            
+                <div>
+                    <button id="button-nav">Ciudad</button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-account.html">Cuenta</a>
                     </button>
 
-                    <button>
+                    <button id="button-nav">
                         <a href="user-cart.html">Carrito</a>
                     </button>
                 </div>
@@ -46,23 +50,42 @@
     </header>
 
     <main>
-        <div class="main-titleContact main-title">
+        <div class=" conteiner main-titleContact main-title">
             <h1>Contacto</h1>
         </div>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-10 text-center pt-3">
+                    <h1 class="title-stores">MusicStudio - Nuestras tiendas</h2>
+                    <div class="row">
+                        <h2>Tienda Curitiba-PR</h2>
+                        <div class="col-6">
+                            <h4>Tienda Curitiba-PR</h3>
+                            <ul>
+                                <li>Rua Canadá, 1471, Bacacheri</li>
+                                <li>Curitiba-PR Brasil</li>
+                                <li>Telefono: (41) 3077-7113</li>
+                                <li>Email: contacto-pr@musicstudio.com</li>
+                                <li></li>
+                                <li>Horário de atención al público</li>
+                                <li>Lunes a Viernes: 9am a 6pm</li>
+                                <li>Sabados: 9am a 1pm</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
 
         <div class="contact-grid">
-            <div class="store-contact center no-decor">
-                <ul>
-                    <li>Tienda Curitiba-PR</li>
-                    <li>Rua Canadá, 1471, Bacacheri, Curitiba-PR Brasil</li>
-                    <li>Telefono: (41) 3077-7113</li>
-                    <li>Email: contacto-pr@musicstudio.com</li>
-                </ul>
-            </div>
-            
-            <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
             
             <div class="center no-decor">
                 <ul>
@@ -77,7 +100,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.870709469134!2d-46.644376864614145!3d-23.542654631417403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58519cff9bc3%3A0x6aa55e7150be1971!2sGaleria%20do%20Rock!5e0!3m2!1spt-BR!2sbr!4v1635291187730!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>            
         </div>
-       
+        
         <div>
             <h2 class="center">Escriba su mensaje</h2>
             
@@ -89,7 +112,7 @@
                 <div class="tel-form">
                     <input type="text" placeholder="Telefono">
                 </div>
-               
+            
                 <div class="email-form">
                     <input type="email" placeholder="Email">
                 </div>
@@ -97,7 +120,7 @@
                 <div class="subject-form">
                     <input type="text" placeholder="Asunto">
                 </div>
-                       
+            
                 <div class="mensage-2">
                     <input type="text" placeholder="Mensaje">
                 </div>
@@ -133,7 +156,7 @@
                     <li>
                         <a href="https://www.instagram.com/" target="_blank">
                             <img class="img-sizeRed" src="../public/images/instagram-logo.png" alt="Logo instagram">
-                       </a> 
+                        </a> 
                     </li>
                     <li>
                         <a href="https://twitter.com/" target="_blank">
@@ -149,5 +172,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
