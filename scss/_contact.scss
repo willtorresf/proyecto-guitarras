@@ -1,11 +1,13 @@
 /*=========CONTACTO=============*/
 .main-titleContact{
-    height: 300px;
-    grid-area: main;
+    height: 200px;
     background-image: url(../public/images/contact-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center 75%;
+}
+.title-stores{
+    border-bottom: $border-bottom;
 }
 .contact-grid{
     display: grid;
