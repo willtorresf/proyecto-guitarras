@@ -52,17 +52,19 @@
     
     <main>
         <!--=====Carrito========-->
-        <h1 class="h1-cart">Carrito</h1>
-        
-        <div class="cart">
-            <img class="cart-img" src="../public/images/shopping-cart.png" alt="shopping-cart">
-            <h3>Su carrito está vacio</h3>
-            <p>Usted aún no tiene productos en su carrito</p>
+        <h1 class="mt-3" id="h1-cart">Carrito</h1>
+
+        <div class="Conteiner d-flex flex-column align-items-center">
+            <div class="cart">
+                <img class="cart-img mt-5" src="../public/images/shopping-cart.png" alt="shopping-cart">
+                <h3>Su carrito está vacio</h3>
+                <p>Usted aún no tiene productos en su carrito</p>
+            </div>
+
+            <button class="btn btn-primary" id="button-cart">
+                <a href="../index.html">Continuar comprando</a>
+            </button>
         </div>
-        
-        <button id="cart-button">
-            <a href="../index.html">Continuar comprando</a>
-        </button>
     </main>
     
     <footer>
