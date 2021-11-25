@@ -1,12 +1,25 @@
 /*======MEDIA QUERIES====*/
 @media (max-width:768px){
+    
+    /*======Nav====*/
     .search-bar input{
         width: auto;
     }
+    
+
+    /*======Footer====*/
     .footer-1{
         flex-direction: column;
         justify-content: center;
     }
+
+
+
+
+
+
+
+
 }
 @media (max-width: 375px){
     .nav-2{

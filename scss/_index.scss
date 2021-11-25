@@ -1,25 +1,10 @@
 /*=======INDEX MAIN==========*/
 .main-bar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: #fff;
 }
-.item-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.item-bar div img{
-    margin: 10px;
-}
-.item-bar p{
-    padding: 0;
-    margin: 0;
-}
+
 .bar-primary{
     font-weight: 500;
 }
@@ -120,15 +105,10 @@
 /*=======INDEX SECTION 4==========*/
 .img-center{
     transform: translateX(30px);
+    width: max-content;
+    height: auto;
 }
 /*=======INDEX SECTION 5==========*/
-.grid-section{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-}
 .div-about{
     font-weight: 500;
     text-align: justify;
@@ -139,16 +119,6 @@
     font-weight: 500;
     text-align: center;
     padding: 15px;
-}
-.div-formulario ul{
-    list-style-type: none;
-}
-.mensage input{
-    height: 80px;
-    width: 300px;
-}
-.inline-div{
-    display: inline;
 }
 .chat img{
     height: auto;
