@@ -1,3 +1,15 @@
-@mixin border-bottom {
-    border-bottom: $border-bottom;
+@mixin back-index {
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin restore-m-p{
+    margin: 0;
+    padding: 0;
+}
+@mixin back-products {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

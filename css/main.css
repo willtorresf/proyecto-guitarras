@@ -107,6 +107,9 @@ header {
       font-weight: 500; }
 
 /*=======INDEX MAIN==========*/
+.carousel-h {
+  height: 400px; }
+
 .main-bar {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -131,16 +134,16 @@ header {
 .back-guitar {
   height: 300px;
   width: 500px;
-  background-image: url(../public/images/background-guitar.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-image: url(../public/images/background-guitar.jpg); }
 
 .back-drum {
   height: 300px;
   width: 500px;
-  background-image: url(../public/images/background-drum.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-image: url(../public/images/background-drum.jpg); }
 
 #p-1g {
   color: #ff9910;
@@ -157,14 +160,6 @@ header {
 .h2-section2 {
   transform: translateX(30px);
   width: 400px; }
-
-.offer-indexGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: space-between;
-  align-content: center;
-  row-gap: 10px; }
 
 .margin {
   transform: translateX(50px); }
@@ -209,9 +204,9 @@ header {
 /*=======PRODUCTOS==========*/
 .main-titleGuitar {
   height: 250px;
-  background-image: url(../public/images/guitarra-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/guitarra-main.jpg);
   background-position: center; }
 
 .main-title h3 {
@@ -239,49 +234,48 @@ header {
 
 .main-titleDrums {
   height: 250px;
-  background-image: url(../public/images/bateria-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/bateria-main.jpg);
   background-position: center 60%; }
 
 .main-titleBass {
   height: 250px;
-  grid-area: main;
-  background-image: url(../public/images/bajo-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/bajo-main.jpg);
   background-position: center; }
 
 .main-titleAccesorios {
   height: 250px;
-  background-image: url(../public/images/accesorios-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/accesorios-main.jpg);
   background-position: center 40%; }
 
 .main-titleClassic {
   height: 250px;
-  background-image: url(../public/images/classic-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/classic-main.jpg);
   background-position: center; }
 
 .main-titleCourse {
   height: 250px;
-  background-image: url(../public/images/course-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../public/images/course-main.jpg);
   background-position: center 40%; }
 
 /*==============FOOTER=============*/
 footer {
-  background-color: black; }
+  background-color: #000; }
 
 footer p {
-  color: white; }
+  color: #fff; }
 
 footer li a {
-  color: white; }
+  color: #fff; }
 
 .footer-1 {
   display: flex;
@@ -309,7 +303,8 @@ footer li a {
   transform: scale(1.2); }
 
 .footer-nav ul li a:hover {
-  border-bottom: solid 2px #fff; }
+  border-bottom: solid 2px #fff;
+  color: #fff; }
 
 /*=========CONTACTO=============*/
 .main-titleContact {
@@ -360,32 +355,7 @@ footer li a {
   justify-content: space-evenly;
   align-items: center; }
 
-.enter-register {
-  display: grid;
-  grid-template-areas: 'title title' 'form1 input1' 'form2 input2' 'message message' 'button button';
-  justify-items: center;
-  align-items: center;
-  grid-column-gap: 10px; }
-
-.form1 {
-  grid-area: form1;
-  justify-self: end;
-  font-weight: 500; }
-
-.form2 {
-  grid-area: form2;
-  font-weight: 500; }
-
-.input1 {
-  grid-area: input1;
-  height: 30px; }
-
-.input2 {
-  grid-area: input2;
-  height: 30px; }
-
 .message {
-  grid-area: message;
   font-weight: 500;
   color: gray;
   font-size: 15px;

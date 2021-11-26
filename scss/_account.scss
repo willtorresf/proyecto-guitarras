@@ -5,37 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.enter-register{
-    display: grid;
-    grid-template-areas: 
-    'title title'
-    'form1 input1'
-    'form2 input2'
-    'message message'
-    'button button';
-    justify-items: center;
-    align-items: center;
-    grid-column-gap: 10px;
-}
-.form1{
-    grid-area: form1;
-    justify-self: end;
-    font-weight: 500;
-}
-.form2{
-    grid-area: form2;
-    font-weight: 500;
-}
-.input1{
-    grid-area: input1;
-    height: 30px;
-}
-.input2{
-    grid-area: input2;
-    height: 30px;
-}
 .message{
-    grid-area: message;
     font-weight: 500;
     color: gray;
     font-size: 15px;
