@@ -1,28 +1,94 @@
 /*======MEDIA QUERIES====*/
-@media (max-width:768px){
-    
+@media (max-width:1024px){
     /*======Nav====*/
     .search-bar input{
         width: auto;
     }
-    
+}
 
+
+@media (max-width:768px){
+    
+    .disp-none{
+        display: none;
+    }
     /*======Footer====*/
     .footer-1{
         flex-direction: column;
         justify-content: center;
     }
-
-
-
-
-
-
-
-
+    //index
+    .section-index1{
+        justify-content: center;
+        
+    }
+    //Carrito
+    .cart{
+        width: 500px;
+    }
+    .title-marl{
+        margin-left: 1.5rem;
+    }
 }
-@media (max-width: 375px){
+
+@media (max-width: 425px){
     .nav-2{
+        flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+    .nav-1{
+        flex-wrap: wrap;
+    }
+    //Index
+    .back-guitar{
+        height: 220px;
+        width: fit-content;
+    }
+    .back-drum{
+        height: 220px;
+        width: fit-content;
+    }
+    .chat img{
+        height: auto;
+        width: 50px;
+        bottom: 10px;
+        right: 90px;
+    }
+    //Productos
+    .main-titleAccesorios{
+        height: 150px;
+    }
+    .main-titleGuitar{
+        height: 150px;
+    }
+    .main-titleBass{
+        height: 150px;
+    }
+    .main-titleDrums{
+        height: 150px;
+    }
+    .main-titleCourse{
+        height: 150px;
+    }
+    .main-titleClassic{
+        height: 150px;
+    }
+    .main-title h3{
+        font-size: 20px;
+    }
+    .main-title h1{
+        font-size: 50px;
+    }
+    //Carrito
+    .cart{
+        width: auto;
+    }
+    #h1-cart{
+        transform: translateX(100px);
+        width: 200px;
+    }
+    //Contact
+    .main-titleContact{
+        height: 100px;
     }
 }

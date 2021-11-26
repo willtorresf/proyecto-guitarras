@@ -135,9 +135,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.section-guitar {
-  transform: translate(220px, 80px); }
-
 .back-drum {
   height: 300px;
   width: 500px;
@@ -145,39 +142,14 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.section-drum {
-  transform: translate(80px, 80px); }
-
 #p-1g {
   color: #ff9910;
-  font-size: 30px;
-  margin: 0;
-  transform: translateX(100px); }
+  font-size: 30px; }
 
 #p-2g {
   border: solid 1px #fff;
   background-color: #fff;
   color: #000;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-  width: 100px;
-  transform: translateX(100px); }
-
-#p-3g {
-  transform: translateX(100px); }
-
-#p-1 {
-  color: #ff9910;
-  font-size: 30px;
-  margin: 0; }
-
-#p-2 {
-  border: solid 1px #fff;
-  background-color: #fff;
-  color: #000;
-  margin: 10px;
-  padding: 5px;
   text-align: center;
   width: 100px; }
 
@@ -236,7 +208,7 @@ header {
 
 /*=======PRODUCTOS==========*/
 .main-titleGuitar {
-  height: 300px;
+  height: 250px;
   background-image: url(../public/images/guitarra-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,14 +216,11 @@ header {
 
 .main-title h3 {
   font-size: 40px;
-  transform: translate(100px, 150px);
   color: #fff;
   width: fit-content; }
 
 .main-title h1 {
   font-size: 100px;
-  position: absolute;
-  left: 100px;
   color: #ff9910; }
 
 .sidebar {
@@ -269,14 +238,14 @@ header {
   text-align: center; }
 
 .main-titleDrums {
-  height: 300px;
+  height: 250px;
   background-image: url(../public/images/bateria-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 60%; }
 
 .main-titleBass {
-  height: 300px;
+  height: 250px;
   grid-area: main;
   background-image: url(../public/images/bajo-main.jpg);
   background-repeat: no-repeat;
@@ -284,21 +253,21 @@ header {
   background-position: center; }
 
 .main-titleAccesorios {
-  height: 300px;
+  height: 250px;
   background-image: url(../public/images/accesorios-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 40%; }
 
 .main-titleClassic {
-  height: 300px;
+  height: 250px;
   background-image: url(../public/images/classic-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .main-titleCourse {
-  height: 300px;
+  height: 250px;
   background-image: url(../public/images/course-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,12 +332,15 @@ footer li a {
   list-style: none;
   font-weight: 500; }
 
+.title-marl {
+  margin-left: 3rem; }
+
 /*=========CARRITO=========*/
 .cart {
   border: solid 2px black;
   text-align: center;
   height: 350px;
-  width: 150vh; }
+  width: 800px; }
 
 .cart-img {
   width: 100px;
@@ -438,15 +410,62 @@ footer li a {
   margin-bottom: 50px; }
 
 /*======MEDIA QUERIES====*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /*======Nav====*/
   .search-bar input {
-    width: auto; }
+    width: auto; } }
+
+@media (max-width: 768px) {
+  .disp-none {
+    display: none; }
   /*======Footer====*/
   .footer-1 {
     flex-direction: column;
-    justify-content: center; } }
+    justify-content: center; }
+  .section-index1 {
+    justify-content: center; }
+  .cart {
+    width: 500px; }
+  .title-marl {
+    margin-left: 1.5rem; } }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .nav-2 {
-    justify-content: space-evenly; } }
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .nav-1 {
+    flex-wrap: wrap; }
+  .back-guitar {
+    height: 220px;
+    width: fit-content; }
+  .back-drum {
+    height: 220px;
+    width: fit-content; }
+  .chat img {
+    height: auto;
+    width: 50px;
+    bottom: 10px;
+    right: 90px; }
+  .main-titleAccesorios {
+    height: 150px; }
+  .main-titleGuitar {
+    height: 150px; }
+  .main-titleBass {
+    height: 150px; }
+  .main-titleDrums {
+    height: 150px; }
+  .main-titleCourse {
+    height: 150px; }
+  .main-titleClassic {
+    height: 150px; }
+  .main-title h3 {
+    font-size: 20px; }
+  .main-title h1 {
+    font-size: 50px; }
+  .cart {
+    width: auto; }
+  #h1-cart {
+    transform: translateX(100px);
+    width: 200px; }
+  .main-titleContact {
+    height: 100px; } }

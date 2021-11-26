@@ -28,9 +28,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.section-guitar{
-    transform: translate(220px,80px);
-}
 .back-drum{
     height: 300px;
     width: 500px;
@@ -38,39 +35,14 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.section-drum{
-    transform: translate(80px,80px);
-}
 #p-1g{
     color: #ff9910;
     font-size: 30px;
-    margin: 0;
-    transform: translateX(100px);
 }
 #p-2g{
     border:solid 1px #fff;
     background-color: #fff;
     color: #000;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    width: 100px;
-    transform: translateX(100px);
-}
-#p-3g{
-    transform: translateX(100px);
-}
-#p-1{
-    color: #ff9910;
-    font-size: 30px;
-    margin: 0;
-}
-#p-2{
-    border:solid 1px #fff;
-    background-color: #fff;
-    color: #000;
-    margin: 10px;
-    padding: 5px;
     text-align: center;
     width: 100px;
 }
