@@ -13,11 +13,10 @@ button{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: $main-color;
 }
 ul{
-    margin: 0;
-    padding: 0;
+    @include restore-m-p;
 }
 .center{
     text-align: center;

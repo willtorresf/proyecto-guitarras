@@ -1,14 +1,12 @@
 /*=======PRODUCTOS==========*/
 .main-titleGuitar{
-    height: 250px;
+    @include back-products;
     background-image: url(../public/images/guitarra-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 }
 .main-title h3{
     font-size: 40px;
-    color: #fff;
+    color: $second-color;
     width: fit-content;
 }
 .main-title h1{
@@ -30,38 +28,27 @@
     text-align: center;
 }
 .main-titleDrums{
-    height: 250px;
+    @include back-products;
     background-image: url(../public/images/bateria-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center 60%;
 }
 .main-titleBass{
-    height: 250px;
-    grid-area: main;
+    @include back-products;
     background-image: url(../public/images/bajo-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;    
 }
 .main-titleAccesorios{
-    height: 250px;
+    @include back-products;
     background-image: url(../public/images/accesorios-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center 40%;    
 }
 .main-titleClassic{
-    height: 250px;
+    @include back-products;
     background-image: url(../public/images/classic-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;    
 }
 .main-titleCourse{
-    height: 250px;
+    @include back-products;
     background-image: url(../public/images/course-main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center 40%;    
 }
