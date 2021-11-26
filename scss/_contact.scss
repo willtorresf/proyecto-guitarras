@@ -6,15 +6,15 @@
     background-size: cover;
     background-position: center 75%;
 }
-.title-stores h1{
-    border-bottom: solid 3px #ff9910;
-}
-.title-stores h2{
-    border-bottom: solid 3px #ff9910;
-}
-.title-stores h3{
-    border-bottom: solid 3px #ff9910;
-}
+
+//Aplicación bucle
+.title-stores {
+    @for $i from 1 to 4{
+        h#{$i}{
+            border-bottom: $border-contact;
+        }
+    }
+} 
 .list-contact{
     list-style: none;
     font-weight: 500;
