@@ -20,43 +20,45 @@
 </head>
 <body>
     <header>
-        <nav>
-            <!--=====Navegador 1========-->
-            <div class="nav-1" id="home">
-                <div>
-                    <a href="../index.html">
-                        <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
-                    </a>
-                </div>
-                
-                <form class="search-bar">
-                    <input type="text" placeholder="Buscar">
-                    <button></button>
-                </form>
-            
-                <div>
-                    <button id="button-nav">Ciudad</button>
-
-                    <button id="button-nav">
-                        <a href="user-account.html">Cuenta</a>
-                    </button>
-
-                    <button id="button-nav">
-                        <a href="user-cart.html">Carrito</a>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="../index.html">
+                    <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="nav-1">
+                        <form class="search-bar">
+                            <input type="text" placeholder="Buscar">
+                            <button></button>
+                        </form>
+                        <button id="button-nav">Ciudad</button>
+                        
+                        <button id="button-nav">
+                            <a href="user-account.html">Cuenta</a>
+                        </button>
+    
+                        <button id="button-nav">
+                            <a href="user-cart.html">Carrito</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class=" conteiner main-titleContact main-title">
-            <h1>Contacto</h1>
+        <div class="conteiner">
+            <div class="main-titleContact main-title">
+                <h1 class="ps-5 pt-3">Contacto</h1>
+            </div>
         </div>
         <div class="conteiner">
             <div class="row">
-                <div class="col-3">
-                    <div class="text-start title-stores mt-5 ms-5">
+                <div class="col-md-3">
+                    <div class="text-start title-stores mt-5 title-marl">
                         <h3 class="mb-2 text-center">Institucional</h3>
                         <ul class="list-contact">
                             
@@ -74,7 +76,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="text-start title-stores mt-5 ms-5">
+                    <div class="text-start title-stores title-marl mt-5">
                         <h3 class="mb-2 text-center">Dudas</h3>
                         <ul class="list-contact">
                             <li>
@@ -92,10 +94,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-9 text-center title-stores mt-3 p-0 d-flex flex-column align-items-center">
+                <div class="col-md-9 text-center title-stores mt-3 p-0 d-flex flex-column align-items-center">
                     <h1 class="w-65">MusicStudio - Nuestras tiendas</h1>
                     <div class="row conteiner d-flex align-items-center align-content-center">
-                        <div class="col-6 text-start title-stores">
+                        <div class="col-md-6 text-start title-stores">
                             <h2 class="mb-2 text-center">Tienda Curitiba-PR</h2>
                             <ul class="list-contact">
                                 <li>Rua Canadá, 1471, Bacacheri</li>
@@ -108,12 +110,12 @@
                                 <li>Sabados: 9am a 1pm</li>
                             </ul>
                         </div>
-                        <div class="col-6 pt-2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="col-md-6 pt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="fit-content" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                     <div class="row conteiner d-flex align-items-center align-content-center mt-2">
-                        <div class="col-6 text-start title-stores">
+                        <div class="col-md-6 text-start title-stores">
                             <h2 class="mb-2 text-center">Tienda São Paulo-SP</h2>
                             <ul class="list-contact">
                                 <li>Av. São João, 439, República</li>
@@ -127,8 +129,8 @@
                             </ul>
                         </div>
     
-                        <div class="col-6 pt-2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.870709469134!2d-46.644376864614145!3d-23.542654631417403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58519cff9bc3%3A0x6aa55e7150be1971!2sGaleria%20do%20Rock!5e0!3m2!1spt-BR!2sbr!4v1635291187730!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="col-md-6 pt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.870709469134!2d-46.644376864614145!3d-23.542654631417403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58519cff9bc3%3A0x6aa55e7150be1971!2sGaleria%20do%20Rock!5e0!3m2!1spt-BR!2sbr!4v1635291187730!5m2!1spt-BR!2sbr" width="fit-content" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>                    
                 </div>

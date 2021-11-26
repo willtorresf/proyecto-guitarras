@@ -20,59 +20,57 @@
 </head>
 <body>
     <header>
-        <nav>
-            <!--=====Navegador 1========-->
-            <div class="nav-1" id="home">
-                <div>
-                    <a href="../index.html">
-                        <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
-                    </a>
-                </div>
-            
-                <form class="search-bar">
-                    <input type="text" placeholder="Buscar">
-                    <button></button>
-                </form>
-           
-                <div>
-                    <button id="button-nav">Ciudad</button>
-
-                    <button id="button-nav">
-                        <a href="user-account.html">Cuenta</a>
-                    </button>
-
-                    <button id="button-nav">
-                        <a href="user-cart.html">Carrito</a>
-                    </button>
-                </div>
-            </div>
-
-            <!--=====Navegador 2========-->
-            <div class="nav-2 button-navSecundary">
-                <div>Más opciones</div>
-                
-                <div>
-                        <a href="guitars.html">Guitarras</a>
-                </div> 
-                
-                <div>
-                        <a href="bass.html">Bajos</a>
-                </div>
-                
-                <div>
-                        <a href="drums.html">Baterías</a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="../index.html">
+                    <img class="logo" src="../public/images/logo_large.png" alt="Foto del Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row row-cols-1" id="navbarTogglerDemo02">
+                    <div class="nav-1">
+                        <form class="search-bar">
+                            <input type="text" placeholder="Buscar">
+                            <button></button>
+                        </form>
+                        <button id="button-nav">Ciudad</button>
                         
-                <div>
-                        <a href="classics.html">Clásicos</a>
-                </div>
-                        
-                <div>
-                        <a href="accessories.html">Accesorios</a>
-                </div>
-                
-                <div>
-                        <a href="courses.html">Cursos</a>
+                        <button id="button-nav">
+                            <a href="user-account.html">Cuenta</a>
+                        </button>
+    
+                        <button id="button-nav">
+                            <a href="user-cart.html">Carrito</a>
+                        </button>
+                    </div>
+
+                    <div class="nav-2 button-navSecundary ps-2">
+                        <div>Más opciones</div>
+                    
+                        <div>
+                            <a href="guitars.html">Guitarras</a>
+                        </div> 
+                    
+                        <div>
+                            <a href="bass.html">Bajos</a>
+                        </div>
+                    
+                        <div>
+                            <a href="drums.html">Baterías</a>
+                        </div>
+                            
+                        <div>
+                            <a href="classics.html">Clásicos</a>
+                        </div>
+                            
+                        <div>
+                            <a href="accessories.html">Accesorios</a>
+                        </div>
+                        <div>
+                            <a href="courses.html">Cursos</a>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </nav>
@@ -80,12 +78,12 @@
     
     <main>           
         <div class="conteiner">
-            <div class="main-titleDrums main-title">
-                <h1>Baterías</h1>
-                <h3>Los mejores precios están en MusicStudio</h3>
+            <div class="main-titleDrums main-title d-flex flex-column align-items-start">
+                <h1 class="ps-5 pt-3">Baterías</h1>
+                <h3 class="ps-5">Los mejores precios están en MusicStudio</h3>
             </div>            
             <div class="row pt-1">
-                <div class="conteiner col-2 sidebar p-2">
+                <div class="conteiner col-lg-2 sidebar p-2">
                     <h2>Categorias</h2>
                     <ul class="list-items">
                         <li>Acústicas</li>
@@ -94,7 +92,7 @@
                         <li>Bancos y baquetas</li>
                     </ul>
                 </div>
-                <div class="conteiner col-10 row gap-4 p-0 justify-content-center">
+                <div class="conteiner col-lg-10 row gap-4 p-0 justify-content-center">
                     <div class="col-12 row justify-content-evenly">
                             <div class="card col-4" style="width: 18rem;">
                                 <img src="https://dummyimage.com/400x600/000/fff" class="card-img-top" alt="bateria-1">

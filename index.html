@@ -20,58 +20,57 @@
 
 <body>
     <header>
-        <nav>
-            <!--=====Navegador 1========-->
-            <div class="nav-1" id="home">
-                <div>
-                    <a href="index.html">
-                        <img class="logo" src="public/images/logo_large.png" alt="Foto del Logo">
-                    </a>
-                </div>
-                
-                <form class="search-bar">
-                    <input type="text" placeholder="Buscar">
-                    <button></button>
-                </form>
-                
-                <div>
-                    <button id="button-nav">Ciudad</button>
-                    
-                    <button id="button-nav">
-                        <a href="pages/user-account.html">Cuenta</a>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="index.html">
+                    <img class="logo" src="public/images/logo_large.png" alt="Foto del Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row row-cols-1" id="navbarTogglerDemo02">
+                    <div class="nav-1">
+                        <form class="search-bar">
+                            <input type="text" placeholder="Buscar">
+                            <button></button>
+                        </form>
+                        <button id="button-nav">Ciudad</button>
+                        
+                        <button id="button-nav">
+                            <a href="pages/user-account.html">Cuenta</a>
+                        </button>
+    
+                        <button id="button-nav">
+                            <a href="pages/user-cart.html">Carrito</a>
+                        </button>
+                    </div>
 
-                    <button id="button-nav">
-                        <a href="pages/user-cart.html">Carrito</a>
-                    </button>
-                </div>
-            </div>
-            <!--=====Navegador 2========-->
-            <div class="nav-2 button-navSecundary">
-                <div>Más opciones</div>
-                
-                <div>
-                        <a href="pages/guitars.html">Guitarras</a>
-                </div> 
-                
-                <div>
-                        <a href="pages/bass.html">Bajos</a>
-                </div>
-                
-                <div>
-                        <a href="pages/drums.html">Baterías</a>
-                </div>
-                        
-                <div>
-                        <a href="pages/classics.html">Clásicos</a>
-                </div>
-                        
-                <div>
-                        <a href="pages/accessories.html">Accesorios</a>
-                </div>
-                
-                <div>
-                        <a href="pages/courses.html">Cursos</a>
+                    <div class="nav-2 button-navSecundary ps-2">
+                        <div>Más opciones</div>
+                    
+                        <div>
+                            <a href="pages/guitars.html">Guitarras</a>
+                        </div> 
+                    
+                        <div>
+                            <a href="pages/bass.html">Bajos</a>
+                        </div>
+                    
+                        <div>
+                            <a href="pages/drums.html">Baterías</a>
+                        </div>
+                            
+                        <div>
+                            <a href="pages/classics.html">Clásicos</a>
+                        </div>
+                            
+                        <div>
+                            <a href="pages/accessories.html">Accesorios</a>
+                        </div>
+                        <div>
+                            <a href="pages/courses.html">Cursos</a>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </nav>
@@ -119,72 +118,73 @@
             </div>
         </section>    
         <!--==========Barra Main=================-->
-        <div class="main-bar">
-            <div class="item-bar">
+        <div class="conteiner main-bar row d-flex justify-content-evenly">
+            <div class="col-3 d-flex justify-content-center">
                 <div>
                     <img src="public/images/tarjeta.png" alt="Tarjeta">
                 </div>
         
-                <div>
-                    <p class="bar-primary">Pagos por cuotas</p>
-                    <p>Hasta 10 veces sin interés</p>
+                <div class="ms-2 disp-none">
+                    <p class="bar-primary m-0">Pagos por cuotas</p>
+                    <p class="m-0">Hasta 10 veces sin interés</p>
                 </div>
             </div>
                 
-            <div class="item-bar">
+            <div class="col-4 d-flex justify-content-center">
                 <div>
                     <img src="public/images/truck.jpg" alt="Flete">
                 </div>
         
-                <div>
-                    <p class="bar-primary">Flete gratis</p>
-                    <p>Para pedidos mayores a 1000 USD</p>
+                <div class="ms-2 disp-none">
+                    <p class="bar-primary m-0">Flete gratis</p>
+                    <p class="m-0">Para pedidos mayores a 1000 USD</p>
                 </div>
             </div>
                 
-            <div class="item-bar">
+            <div class="col-3 d-flex justify-content-center">
                 <div>
                     <img src="public/images/security.jpg" alt="Seguridad">
                 </div>
-                <div>
-                    <p class="bar-primary">Seguridad para comprar</p>
-                    <p>Pedidos por internet</p>
+                <div class="ms-2 disp-none">
+                    <p class="bar-primary m-0">Seguridad para comprar</p>
+                    <p class="m-0">Pedidos por internet</p>
                 </div>
             </div>
 
-            <div class="item-bar">
+            <div class="col-2 d-flex justify-content-center">
                 <div>
                     <img src="public/images/talk.jpg" alt="Whatsapp">
                 </div>
             
-                <div>
-                    <p class="bar-primary">Atendimiento</p>
-                    <p>Via Whatsapp</p>
+                <div class="disp-none">
+                    <p class="bar-primary m-0 ps-2">Atendimiento</p>
+                    <p class="m-0 ps-2">Via Whatsapp</p>
                 </div>
             </div>
         </div>
         <!--==================Sección 1=================-->
-        <section class="section-index1">
-            <div class="back-guitar">
-                <a href="pages/guitars.html">
-                    <div class="section-guitar">
+        <section class="conteiner row section-index1">
+            <div class="col-6 back-guitar mt-2">
+                    <div class="pe-2 pt-5 d-flex flex-column align-items-end">
                         <p>Conozca nuestra colección de</p>
                         <p id="p-1g">Guitarras</p>
-                        <p id="p-3g">Y mucho más...</p>
-                        <p id="p-2g">Ver ofertas</p>
-                    </div>
-                </a>    
+                        <p>Y mucho más...</p>
+                        <p id="p-2g">
+                            <a href="pages/guitars.html">Ver ofertas</a>
+                        </p>
+                    </div>    
             </div>
             
-            <div class="back-drum">
-                <a href="pages/drums.html">
-                    <div class="section-drum">
+            <div class="col-6 back-drum mt-2">
+                
+                    <div class="ps-2 pt-5 d-flex flex-column align-items-start">
                         <p>Conozca nuestra colección de</p>
-                        <p id="p-1">Percusión</p>
+                        <p id="p-1g">Percusión</p>
                         <p>Y mucho más...</p>
-                        <p id="p-2">Ver ofertas</p>
+                        <p id="p-2g">
+                            <a href="pages/drums.html">Ver ofertas</a>
+                        </p>
                     </div>
-                </a>
             </div>
         </section>
         <!--==================Sección 2=================-->
@@ -264,7 +264,7 @@
                     </a>
                 </div>
 
-                <div class="card col-md-4" style="width: 18rem;">
+                <div class="card col-md-3" style="width: 18rem;">
                     <a href="#">
                     <img src="https://dummyimage.com/250x300/000/fff" class="card-img-top" alt="oferta-8">
                     <div class="card-body">
@@ -277,7 +277,7 @@
         </section >
         
         <!--==================Sección 3=================-->
-        <section class="section-index3">
+        <section class="conteiner section-index3">
             <div>
                 <img class="section3-img" src="public/images/marcas/pearl-logo.png" alt="pearl-logo">
             </div>
@@ -311,25 +311,25 @@
             </div>
         </section>
         <!--==================Sección 4=================-->
-        <section>
-            <img class="img-center" src="https://dummyimage.com/1300x500/000/fff" alt="imagen flete">
+        <section class="conteiner text-center">
+            <img class="img-fluid" src="https://dummyimage.com/1300x500/000/fff" alt="imagen flete">
         </section>
         <!--==================Sección 5=================-->
-        <section>
+        <section class="mt-3">
             <!--=====Sobre nosotros - Ubicación - Formulario========-->
-            <div class="grid-section" id="about-us">
-                <div>
+            <div class="conteiner row" id="about-us">
+                <div class="col-md-4 d-flex flex-column justify-content-center">
                     <h2 class="center">Sobre nosotros</h2>
                     <p class="div-about">MusicStudio Instrumentos y Cursos fue fundada en el año 2021. Somos especialistas en la comercialización de instrumentos musicales, cursos y mucho más.</p>
                     <p class="div-about">Visitanos en:</p>
                 </div>
         
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="col-md-4 text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.38428659636!2d-49.240035685335954!3d-25.391944137608213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce67b6fe5b42f%3A0xcdb5e9fc87a3d8d6!2sR.%20Canad%C3%A1%2C%201471%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082510-290!5e0!3m2!1spt-BR!2sbr!4v1634419853904!5m2!1spt-BR!2sbr" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 
-                <div class="div-formulario">   
-                    <h3>FORMULARIO PARA MÁS INFORMACIÓN</h2>
+                <form class="col-md-4 d-flex flex-column align-items-center">   
+                    <h3 class="text-center">Formulário para más información</h2>
                     <div class="mb-3 mt-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre y apellido">
@@ -348,10 +348,9 @@
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary mb-3">Enviar</button>
                     </div>
-            
-                    <div class="chat">
-                        <img src="public/images/whatsapp-logo.png" alt="Logo whatsapp">
-                    </div>
+                </form>
+                <div class="chat">
+                    <img src="public/images/whatsapp-logo.png" alt="Logo whatsapp">
                 </div>
             </div>
         </section>
