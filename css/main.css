@@ -157,12 +157,9 @@ header {
   width: 100px; }
 
 /*=======INDEX SECTION 2==========*/
-.h2-section2 {
+.h1-section2 {
   transform: translateX(30px);
-  width: 400px; }
-
-.margin {
-  transform: translateX(50px); }
+  width: 600px; }
 
 /*=======INDEX SECTION 3==========*/
 .section-index3 {
@@ -315,13 +312,16 @@ footer li a {
   background-position: center 75%; }
 
 .title-stores h1 {
-  border-bottom: solid 3px #ff9910; }
+  border-bottom: solid 3px #ff9910;
+  font-size: 90px; }
 
 .title-stores h2 {
-  border-bottom: solid 3px #ff9910; }
+  border-bottom: solid 3px #ff9910;
+  font-size: 45px; }
 
 .title-stores h3 {
-  border-bottom: solid 3px #ff9910; }
+  border-bottom: solid 3px #ff9910;
+  font-size: 30px; }
 
 .list-contact {
   list-style: none;

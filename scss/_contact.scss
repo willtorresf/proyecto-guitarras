@@ -12,6 +12,7 @@
     @for $i from 1 to 4{
         h#{$i}{
             border-bottom: $border-contact;
+            font-size: 90px/$i;
         }
     }
 } 
