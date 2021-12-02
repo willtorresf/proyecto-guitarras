@@ -198,6 +198,10 @@ header {
   bottom: 10px;
   right: 15px; }
 
+.size-iframe {
+  width: 350px;
+  height: 400px; }
+
 /*=======PRODUCTOS==========*/
 .main-titleGuitar {
   height: 250px;
@@ -280,10 +284,6 @@ footer li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
-
-.img-face {
-  width: 50px;
-  height: auto; }
 
 .img-sizeRed {
   width: 40px;
@@ -393,7 +393,10 @@ footer li a {
   .cart {
     width: 500px; }
   .title-marl {
-    margin-left: 1.5rem; } }
+    margin-left: 1.5rem; }
+  .size-iframe {
+    width: 200px;
+    height: 300px; } }
 
 @media (max-width: 425px) {
   .nav-2 {
