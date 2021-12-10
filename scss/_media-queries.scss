@@ -33,6 +33,20 @@
         width: 200px;
         height: 300px;
     }
+    //contact
+    .contact-iframe{
+        width: 220px;
+        height: 300px;
+    }
+    .title-stores h2{
+        font-size: 40px;
+    }
+    .title-stores h3{
+        font-size: 25px;
+    }
+    .h2-contact{
+        width: 65%;
+    }
 }
 
 @media (max-width: 425px){
@@ -56,7 +70,12 @@
         height: auto;
         width: 50px;
         bottom: 10px;
-        right: 90px;
+        right: 40px;
+    }
+    .h1-section2{
+        width: 350px;
+        transform: translateX(0px);
+        text-align: center;
     }
     //Productos
     .main-titleAccesorios{
@@ -94,5 +113,22 @@
     //Contact
     .main-titleContact{
         height: 100px;
+    }
+    .title-stores h2{
+        font-size: 30px;
+    }
+    .h2-contact{
+        width: 75%;
+    }
+}
+@media (max-width: 375px){
+    .h1-section2{
+        width: 270px;
+        transform: translateX(20px);
+    }
+}
+@media (max-width: 320px){
+    .h1-section2{
+        transform: translateX(0px);
     }
 }
