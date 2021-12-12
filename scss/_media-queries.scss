@@ -4,6 +4,11 @@
     .search-bar input{
         width: auto;
     }
+    /*======course====*/
+    .grid2-contact{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5);
+    }
 }
 
 
@@ -46,6 +51,15 @@
     }
     .h2-contact{
         width: 65%;
+    }
+    //contact
+    .mainGrid-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar{
+        border-right: none;
     }
 }
 
@@ -119,6 +133,13 @@
     }
     .h2-contact{
         width: 75%;
+    }
+    //course
+    .grid2-contact{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 375px){
