@@ -46,7 +46,12 @@
                             <input type="text" placeholder="Buscar">
                             <button></button>
                         </form>
-                        <button id="button-nav">Ciudad</button>
+                        
+                        <select class="ms-1 form-select" aria-label="Default select example">
+                            <option selected>Ciudad</option>
+                            <option value="1">São Paulo-SP</option>
+                            <option value="2">Curitiba-PR</option>
+                        </select>
                         
                         <button id="button-nav">
                             <a href="user-account.html">Cuenta</a>
@@ -58,7 +63,17 @@
                     </div>
 
                     <div class="nav-2 button-navSecundary ps-2">
-                        <div>Más opciones</div>
+                        <div id="dropdown-hover" class="dropdown m-0 p-0">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más opciones
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="construction.html" target="_blank">Sea un revendedor</a></li>
+                                <li><a class="dropdown-item" href="construction.html" target="_blank">Descargue nuestra aplicación</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="construction.html" target="_blank">Trabaje en MusicStudio</a></li>
+                            </ul>
+                        </div>
                     
                         <div>
                             <a href="guitars.html">Guitarras</a>
